@@ -1,0 +1,315 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+ul {
+  position: fixed;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  height: 30px;
+  line-height: 30px;
+  font-size: 24px;
+}
+
+.circle {
+  background: #dac7a4;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+a :hover {
+  background: #232323;
+}
+svg :hover {
+  filter: brightness(10);
+}
+section {
+}
+
+.content {
+  margin: auto;
+
+  padding-top: 450px;
+  justify-content: center;
+  text-align: center;
+}
+#container {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow: hidden;
+}
+
+#container div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#container div#red {
+  background: url(tea.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#container div#yellow {
+  background-color: #1b1b1b;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#container div#blue {
+  background: url(tea3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#container div#pink {
+  background: pink;
+}
+
+#container div#orange {
+  background: orange;
+}
+
+#container div h1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 3em;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+#logo {
+  animation: filled 0.5s ease forwards 2s;
+  width: auto;
+  height: 60px;
+}
+
+#logo :hover {
+  filter: brightness(100);
+}
+#logo path:nth-child(1) {
+  stroke-dasharray: 692;
+  stroke-dashoffset: 692;
+  animation: line-anim 2s ease forwards;
+}
+
+#logo path:nth-child(2) {
+  stroke-dasharray: 546;
+  stroke-dashoffset: 546;
+  animation: line-anim 2s ease forwards 0.3s;
+}
+#logo path:nth-child(3) {
+  stroke-dasharray: 474;
+  stroke-dashoffset: 474;
+  animation: line-anim 2s ease forwards 0.5s;
+}
+#logo path:nth-child(4) {
+  stroke-dasharray: 441;
+  stroke-dashoffset: 441;
+  animation: line-anim 2s ease forwards 0.7s;
+}
+#logo path:nth-child(5) {
+  stroke-dasharray: 281;
+  stroke-dashoffset: 281;
+  animation: line-anim 2s ease forwards 0.9s;
+}
+#logo path:nth-child(6) {
+  stroke-dasharray: 467;
+  stroke-dashoffset: 467;
+  animation: line-anim 2s ease forwards 1s;
+}
+#logo path:nth-child(7) {
+  stroke-dasharray: 729;
+  stroke-dashoffset: 729;
+  animation: line-anim 2s ease forwards 1.5s;
+}
+.whiteText {
+  color: white;
+  padding-top: 50px;
+}
+
+p {
+  color: white;
+  font-weight: lighter;
+}
+
+.cssanimation,
+.cssanimation span {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+
+.cssanimation span {
+  display: inline-block;
+}
+
+.fadeInBottom {
+  animation-name: fadeInBottom;
+}
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes filled {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+.cd-section {
+  height: 100vh;
+}
+.cd-section:first-of-type > div {
+  background-color: #2b334f;
+}
+.cd-section:nth-of-type(2) > div {
+  background-color: #2e5367;
+}
+.cd-section:nth-of-type(3) > div {
+  background-color: #267481;
+}
+.cd-section:nth-of-type(4) > div {
+  background-color: #fcb052;
+}
+.cd-section:nth-of-type(5) > div {
+  background-color: #f06a59;
+}
+[data-animation="parallax"] .cd-section > div {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+[data-animation="parallax"] .cd-section:first-of-type > div {
+  background-image: url("../img/img-1.jpg");
+}
+[data-animation="parallax"] .cd-section:nth-of-type(2) > div {
+  background-image: url("../img/img-2.jpg");
+}
+[data-animation="parallax"] .cd-section:nth-of-type(3) > div {
+  background-image: url("../img/img-3.jpg");
+}
+[data-animation="parallax"] .cd-section:nth-of-type(4) > div {
+  background-image: url("../img/img-4.jpg");
+}
+[data-animation="parallax"] .cd-section:nth-of-type(5) > div {
+  background-image: url("../img/img-5.jpg");
+}
+
+.teaSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1200px;
+  grid-gap: 20px;
+  padding-top: 450px;
+  margin: auto;
+  color: white;
+}
+
+.teaSection p {
+  line-height: 1.5em;
+  width: 320px;
+  color: #717171;
+}
+
+.section1 {
+  animation: fadeInBottom 4s;
+}
+.section2 {
+  animation: fadeInBottom 6s;
+}
+.section3 {
+  animation: fadeInBottom 7s;
+}
+i {
+  font-size: 30px;
+  color: #ac9d81;
+}
+
+.fadeInBottom {
+  animation-name: fadeInBottom;
+}
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  position: relative;
+}
+.footer {
+  position: absolute;
+  top: 20px;
+}
+
+.containerBlue {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  margin: auto;
+  grid-gap: 90px;
+  line-height: 1.5em;
+  padding-top: 300px;
+}
+
+.leftBox {
+  background-color: #90887d;
+  padding: 30px;
+}
+.leftBox .content {
+  background-color: #90887d;
+  box-shadow: 0 0 32px rgba(255, 0, 0, 0.5);
+  filter: blur(2px);
+}
+.rightBox {
+  background-color: #90887d;
+  padding: 30px;
+}

@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+#logo {
+  animation: filled 0.5s ease forwards 2s;
+  width: auto;
+  height: 60px;
+}
+#logo path:nth-child(1) {
+  stroke-dasharray: 692;
+  stroke-dashoffset: 692;
+  animation: line-anim 2s ease forwards;
+}
+
+#logo path:nth-child(2) {
+  stroke-dasharray: 546;
+  stroke-dashoffset: 546;
+  animation: line-anim 2s ease forwards 0.3s;
+}
+#logo path:nth-child(3) {
+  stroke-dasharray: 474;
+  stroke-dashoffset: 474;
+  animation: line-anim 2s ease forwards 0.5s;
+}
+#logo path:nth-child(4) {
+  stroke-dasharray: 441;
+  stroke-dashoffset: 441;
+  animation: line-anim 2s ease forwards 0.7s;
+}
+#logo path:nth-child(5) {
+  stroke-dasharray: 281;
+  stroke-dashoffset: 281;
+  animation: line-anim 2s ease forwards 0.9s;
+}
+#logo path:nth-child(6) {
+  stroke-dasharray: 467;
+  stroke-dashoffset: 467;
+  animation: line-anim 2s ease forwards 1s;
+}
+#logo path:nth-child(7) {
+  stroke-dasharray: 729;
+  stroke-dashoffset: 729;
+  animation: line-anim 2s ease forwards 1.5s;
+}
+.whiteText {
+  color: white;
+  padding-top: 50px;
+}
+
+p {
+  color: white;
+  font-weight: lighter;
+}
+
+.cssanimation,
+.cssanimation span {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+
+.cssanimation span {
+  display: inline-block;
+}
+
+.fadeInBottom {
+  animation-name: fadeInBottom;
+}
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes filled {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
