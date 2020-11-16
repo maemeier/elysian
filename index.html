@@ -3,29 +3,37 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
-    <script src="//cdn.jsdelivr.net/npm/velocity-animate@2.0/velocity.ui.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.ui.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/velocity-animate@2.0/velocity.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
 
     <title>Elysian</title>
   </head>
   <body data-hijacking="off" data-animation="none">
-    <section class="cd-section visible">
-      <nav>
-        <ul class="cd-vertical-nav">
-          <li><a href="#0" class="cd-prev inactive">Next</a></li>
-          <li><a href="#0" class="cd-next">Prev</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li><a href="#red">red</a></li>
-        <li><a href="#yellow">yellow</a></li>
-        <li><a href="#blue">blue</a></li>
-        <li><a href="#pink">pink</a></li>
-        <li><a href="#orange">orange</a></li>
-      </ul>
-
+    <ul class="pepsi">
+      <li>
+        <a href="#red"><div class="circle"></div></a>
+      </li>
+      <li>
+        <a href="#yellow"><div class="circle "></div></a>
+      </li>
+      <li>
+        <a href="#blue"><div class="circle"></div></a>
+      </li>
+      <li>
+        <a href="#pink"><div class="circle"></div></a>
+      </li>
+      <li>
+        <a href="#orange"><div class="circle"></div></a>
+      </li>
+      <li>
+        <a href="#yellow"><div class="circle"></div></a>
+      </li>
+    </ul>
+    <section>
       <div id="container">
         <div id="red">
           <div class="content">
@@ -92,28 +100,103 @@
             </p>
           </div>
         </div>
-        <div id="yellow" class="cd-section"><h1>yellow</h1></div>
-        <div id="blue" class="cd-section"><h1>blue</h1></div>
-        <div id="pink" class="cd-section"><h1>pink</h1></div>
-        <div id="orange" class="cd-section"><h1>orange</h1></div>
-      </div>
-    </section>
-    <script type="text/javascript">
-      var offset = $(window).scrollTop() - actualBlock.offset().top,
-        windowHeight = $(window).height();
+        <div id="yellow">
+          <section class="section1">
+            <!-- <h3>Exceptional Tea Experiences</h3> -->
+            <div class="teaSection">
+              <div class="section1 fadeInBottom">
+                <i class="fas fa-leaf"></i>
+                <h2>Vintage Nacicuss</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor
+                </p>
+              </div>
+              <div class="section2 fadeInBottom">
+                <i class="fas fa-leaf"></i>
+                <h2>Amazing Juliat Rose</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor
+                </p>
+              </div>
+              <div class="section3 fadeInBottom">
+                <i class="fas fa-leaf"></i>
+                <h2>Tokyo Emeral</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div id="blue">
+          <section class="containerBlue">
+            <div class="leftBox">
+              <h2>Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+              </p>
 
-      if (offset >= -windowHeight && offset <= 0) {
-        // section entering the viewport
-        translateY = (-offset * 100) / windowHeight;
-        scale = 1;
-        opacity = 1;
-      } else if (offset > 0 && offset <= windowHeight) {
-        //section leaving the viewport
-        scale = 1 - (offset * 0.3) / windowHeight;
-        opacity = 1 - offset / windowHeight;
-        translateY = 0;
-        boxShadowBlur = 40 * (offset / windowHeight);
-      }
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+              </p>
+            </div>
+            <div class="rightBox">
+              <h2>Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+              </p>
+            </div>
+          </section>
+        </div>
+        <div id="pink"><h1>pink</h1></div>
+        <div id="orange"><h1>orange</h1></div>
+      </div>
+      <footer>
+        <ul class="footer">
+          <li>facebook</li>
+          <li>instagram</li>
+          <li>facebook</li>
+          <li>instagram</li>
+        </ul>
+      </footer>
+    </section>
+    <script src="scroll-out.js"></script>
+    <script type="text/javascript">
+      ScrollOut({
+        targets: "p, .section1, .section2, .section3"
+      });
+    </script>
+    <script type="text/javascript" src="skrollr.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript">
+      var s = skrollr.init();
     </script>
   </body>
 </html>
